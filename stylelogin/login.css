@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap");
 html {
   font-size: 100%;
 }
@@ -5,31 +6,30 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ce8523), to(#b35417));
-  background: linear-gradient(#ce8523, #b35417);
+  background: -webkit-gradient(linear, left top, left bottom, from(#446063), to(#141e1d));
+  background: linear-gradient(#446063, #141e1d);
   background-repeat: none;
   background-attachment: fixed;
+  font-family: 'EB Garamond', serif;
 }
 
-main {
-  display: block;
-}
-
-main form {
-  margin: 110px 10px 20px 10px;
+form {
+  margin: 110px auto 20px auto;
+  width: 250px;
   background-color: white;
   border-radius: 15px;
-  -webkit-box-shadow: 10px 10px #ce8523;
-          box-shadow: 10px 10px #ce8523;
+  -webkit-box-shadow: 10px 10px #141e1d;
+          box-shadow: 10px 10px #141e1d;
   text-align: center;
-  padding: 50px;
+  padding: auto;
 }
 
-main form h1 {
+form h1 {
   padding-top: 5px;
+  margin-bottom: 30px;
 }
 
-main form ul {
+form ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ main form ul {
   margin-right: 30px;
 }
 
-main form ul li {
+form ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,15 +53,24 @@ main form ul li {
   gap: 5px;
 }
 
-main form ul li input {
+form ul li input {
   border: 0;
   border-bottom: 1px solid gray;
 }
 
-main form ul li button {
+form ul li button {
   border: none;
   padding: 10px;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+form ul li button:hover {
+  background-color: #446063;
+  color: #ccd4dd;
+}
+
+form p {
+  padding: 10px;
 }
 /*# sourceMappingURL=login.css.map */
