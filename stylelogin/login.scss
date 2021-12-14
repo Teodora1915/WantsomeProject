@@ -63,3 +63,11 @@ form{
         padding: 10px;
     }
 }
+
+@media screen and (min-width: 720px){
+    form{
+        margin: 210px auto 20px auto;
+        width: 400px;
+    }
+    
+}
