@@ -80,4 +80,12 @@ form p {
     width: 400px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  form {
+    margin: 210px auto 20px auto;
+    width: 800px;
+    padding: 50px;
+  }
+}
 /*# sourceMappingURL=login.css.map */
