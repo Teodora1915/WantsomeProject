@@ -35,7 +35,7 @@ body {
   position: relative;
 }
 
-.container .title ::before {
+.container .title::before {
   content: ' ';
   position: absolute;
   height: 3px;
