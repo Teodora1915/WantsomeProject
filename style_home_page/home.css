@@ -1,14 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap");
-.logo {
-  border: 1px solid black;
-  padding: 0 5px 0 5px;
-  font-style: italic;
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo .box2 {
-  border: 1px solid black;
-  padding: 0 8px 0 8px;
-  margin: -8px 5px 10px -10px;
+.search_input {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 10px;
+}
+
+.search_button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.search_input:focus,
+.search_button:focus {
+  outline: none;
 }
 
 * {
@@ -31,20 +49,28 @@ body {
   margin-top: 15px;
 }
 
-.hero .container header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.hero .container header nav .nav_toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.hero .container header nav .nav_toggle i {
+  width: 1.5rem;
+  fill: black;
+}
+
+.hero .container header nav .nav_toggle .close {
+  display: none;
+}
+
+.hero .container header nav .nav_toggle .menu {
+  margin-top: 0.2rem;
+}
+
+.hero .container header nav .nav_checkbox {
+  display: none;
 }
 
 .hero .container header nav ul {
@@ -57,15 +83,66 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
+  font-size: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .container header nav ul li {
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
+  display: none;
+}
+
+.hero .container header nav ul li img {
+  width: 5rem;
+}
+
+.hero .container header nav ul li:first-child {
+  margin-right: auto;
+  display: block;
 }
 
 .hero .container header nav ul li a {
   text-decoration: none;
+  color: inherit;
+}
+
+.hero .container header nav ul li a:hover {
+  -webkit-box-shadow: 0 -5px 0px black inset;
+          box-shadow: 0 -5px 0px black inset;
+  padding: 15px 10px 10px 10px;
+}
+
+.hero .container header nav #nav_checkbox:checked ~ ul li {
+  display: block;
+}
+
+.hero .container header nav #nav_checkbox:checked ~ .nav_toggle .close {
+  display: block;
+}
+
+.hero .container header nav #nav_checkbox:checked ~ .nav_toggle .menu {
+  display: none;
+}
+
+@media screen and (min-width: 560px) {
+  .hero .container header nav .nav_toggle {
+    display: none;
+  }
+  .hero .container header nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .container header nav ul li {
+    display: block;
+  }
 }
 /*# sourceMappingURL=home.css.map */
