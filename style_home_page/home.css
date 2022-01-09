@@ -13,15 +13,18 @@
 
 .search_input {
   border: none;
-  border-bottom: 1px solid black;
-  font-size: 10px;
+  border-bottom: 1px solid #dea450;
+  font-size: 18px;
+  background: inherit;
+  color: inherit;
 }
 
 .search_button {
   border: none;
-  background-color: white;
+  background-color: inherit;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 18px;
+  color: inherit;
 }
 
 .search_input:focus,
@@ -42,38 +45,39 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'EB Garamond', serif;
+  background: black;
+  color: #dea450;
 }
 
-.hero .container {
+.container {
   padding: 0 30px;
-  margin-top: 15px;
 }
 
-.hero .container header nav .nav_toggle {
+.container header nav .nav_toggle {
   position: absolute;
   cursor: pointer;
   margin: 0rem 1rem;
   right: 0;
 }
 
-.hero .container header nav .nav_toggle i {
-  width: 1.5rem;
+.container header nav .nav_toggle i {
+  width: 2rem;
   fill: black;
 }
 
-.hero .container header nav .nav_toggle .close {
+.container header nav .nav_toggle .close {
   display: none;
 }
 
-.hero .container header nav .nav_toggle .menu {
+.container header nav .nav_toggle .menu {
   margin-top: 0.2rem;
 }
 
-.hero .container header nav .nav_checkbox {
+.container header nav .nav_checkbox {
   display: none;
 }
 
-.hero .container header nav ul {
+.container header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -83,7 +87,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 10px;
+  font-size: 18px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -93,56 +97,58 @@ body {
           align-items: center;
 }
 
-.hero .container header nav ul li {
+.container header nav ul li {
   font-weight: 400;
   cursor: pointer;
   display: none;
 }
 
-.hero .container header nav ul li img {
+.container header nav ul li img {
   width: 5rem;
 }
 
-.hero .container header nav ul li:first-child {
+.container header nav ul li:first-child {
   margin-right: auto;
   display: block;
 }
 
-.hero .container header nav ul li a {
+.container header nav ul li a {
   text-decoration: none;
   color: inherit;
 }
 
-.hero .container header nav ul li a:hover {
-  -webkit-box-shadow: 0 -5px 0px black inset;
-          box-shadow: 0 -5px 0px black inset;
-  padding: 15px 10px 10px 10px;
+.container header nav ul li a:hover {
+  border-bottom: 1px solid #dea450;
+  padding: 5px 0 5px 0;
 }
 
-.hero .container header nav #nav_checkbox:checked ~ ul li {
+.container header nav #nav_checkbox:checked ~ ul li {
   display: block;
 }
 
-.hero .container header nav #nav_checkbox:checked ~ .nav_toggle .close {
+.container header nav #nav_checkbox:checked ~ .nav_toggle .close {
   display: block;
 }
 
-.hero .container header nav #nav_checkbox:checked ~ .nav_toggle .menu {
+.container header nav #nav_checkbox:checked ~ .nav_toggle .menu {
   display: none;
 }
 
-@media screen and (min-width: 560px) {
-  .hero .container header nav .nav_toggle {
+@media screen and (min-width: 800px) {
+  .container header nav .nav_toggle {
     display: none;
   }
-  .hero .container header nav ul {
+  .container header nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .hero .container header nav ul li {
+  .container header nav ul li {
     display: block;
+  }
+  .container header nav ul li img {
+    width: 7rem;
   }
 }
 /*# sourceMappingURL=home.css.map */

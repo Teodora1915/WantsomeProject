@@ -7,15 +7,18 @@
 
 .search_input{
     border: none;
-    border-bottom: 1px solid black;
-    font-size: 10px;
+    border-bottom: 1px solid $yellow;
+    font-size: 18px;
+    background: inherit;
+    color: inherit;
 }
 
 .search_button{
     border: none;
-    background-color: white;
+    background-color:inherit;
     cursor:pointer;
-    font-size: 10px;
+    font-size: 18px;
+    color: inherit;
 }
 
 .search_input:focus,
