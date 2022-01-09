@@ -122,6 +122,10 @@ body {
   padding: 5px 0 5px 0;
 }
 
+.container header nav ul li .search_input {
+  font-size: 14px;
+}
+
 .container header nav #nav_checkbox:checked ~ ul li {
   display: block;
 }
@@ -132,6 +136,98 @@ body {
 
 .container header nav #nav_checkbox:checked ~ .nav_toggle .menu {
   display: none;
+}
+
+.container .flex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .flex1 .flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .flex1 .flex2 .cup {
+  height: 120px;
+  width: 130px;
+  border: 3.5px solid #dea450;
+  border-radius: 0px 0px 60px 60px;
+  text-decoration: none;
+  opacity: 50%;
+}
+
+.container .flex1 .flex2 .cup a {
+  display: inline-block;
+  margin: 35px 35px 35px 35px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container .flex1 .flex2 .handle {
+  width: 30px;
+  height: 70px;
+  border: 3.5px solid #dea450;
+  border-radius: 0px 20px 20px 0;
+  border-left: 0px;
+  opacity: 50%;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 150px;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.container2 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container2 article h1 {
+  margin-bottom: -10px;
 }
 
 @media screen and (min-width: 800px) {

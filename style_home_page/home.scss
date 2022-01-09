@@ -78,6 +78,9 @@ body{
                             padding: 5px 0 5px 0 ;
                         }
                     }
+                    .search_input{
+                        font-size:14px;
+                    }
                 }
             }
             #nav_checkbox:checked ~ ul li{
@@ -92,9 +95,70 @@ body{
             }
         }
     }
+    .flex1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .flex2{
+            display: flex;
+            flex-direction: row;
+            .cup{
+                height: 120px;
+                width: 130px;
+                border: 3.5px solid $yellow;
+                border-radius: 0px 0px 60px 60px;
+                text-decoration: none;
+                opacity: 50%;
+                a{
+                    display: inline-block;
+                    margin: 35px 35px 35px 35px;
+                    font-size: 15px;
+                    letter-spacing: 4px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color:inherit;
+                }
+                
+            }
+            
+            .handle{
+                width: 30px;
+                height: 70px;
+                border: 3.5px solid $yellow;
+                border-radius: 0px 20px 20px 0;
+                border-left: 0px;
+                opacity: 50%;
+
+            }
+        }
+    }
 }
 
-@media  screen and (min-width: 800px){
+.container2{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin-top:50px;
+    gap: 10px;
+    // .coffeecup{
+    // }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width:fit-content;
+        height:fit-content;
+        h1{
+            margin-bottom: -10px;
+        }
+    }
+}
+
+@media  screen and (min-width: 800px)
+{
     .container{
         header{
             nav{
