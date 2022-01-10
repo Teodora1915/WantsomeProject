@@ -194,16 +194,10 @@ body {
 }
 
 .container2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: inline-block;
   height: 150px;
   margin-top: 50px;
-  gap: 10px;
+  background: url("/images/bg1.png");
 }
 
 .container2 article {
