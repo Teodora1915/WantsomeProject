@@ -137,9 +137,9 @@ body{
 }
 
 .container2{
-    display: inline-block;
-    height: 150px;
-    margin-top:50px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/bg2.png');
     article{
         display: flex;
         flex-direction: column;
@@ -147,6 +147,7 @@ body{
         text-align: center;
         width:fit-content;
         height:fit-content;
+        
         h1{
             margin-bottom: -10px;
         }

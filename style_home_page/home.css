@@ -194,9 +194,9 @@ body {
 }
 
 .container2 {
-  display: inline-block;
-  height: 150px;
-  margin-top: 50px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/bg2.png");
 }
 
 .container2 article {
