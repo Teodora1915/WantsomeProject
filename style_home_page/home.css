@@ -193,13 +193,11 @@ body {
   opacity: 50%;
 }
 
-.container2 {
+.container2 article {
   width: 100vw;
   height: 100vh;
   background-image: url("/images/bg2.png");
-}
-
-.container2 article {
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,12 +209,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .container2 article h1 {

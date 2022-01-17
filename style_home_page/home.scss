@@ -137,16 +137,15 @@ body{
 }
 
 .container2{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('/images/bg2.png');
     article{
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/images/bg2.png');
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width:fit-content;
-        height:fit-content;
         
         h1{
             margin-bottom: -10px;
