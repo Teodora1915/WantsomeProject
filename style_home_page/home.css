@@ -193,11 +193,27 @@ body {
   opacity: 50%;
 }
 
-.container2 article {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/images/BG3.png");
-  background-size: cover;
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container2 img {
+  margin-top: 40px;
+  width: 150px;
+  height: 100px;
+  opacity: 65%;
+}
+
+.container2 .text1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +227,7 @@ body {
   text-align: center;
 }
 
-.container2 article h1 {
+.container2 .text1 h1 {
   margin-bottom: -10px;
 }
 
