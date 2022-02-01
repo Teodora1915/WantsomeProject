@@ -143,7 +143,7 @@ body{
         margin-left: 5px;
         margin-right: 5px;
 
-    img{
+    .img1{
         margin-top: 40px;
         width:150px;
         height: 100px;
@@ -160,7 +160,216 @@ body{
         }
     }
 }
+.container3{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    input[type=radio] {
+        display: none;
+    }
+    .card{
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        transition: transform .4s ease;
+        cursor: pointer;
+    }
+    .cards {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+    img {
+        margin-left: 100px;  
+        margin-top: 60px;
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
 
+    
+    #item-1:checked ~ .cards #product-3, 
+    #item-2:checked ~ .cards #product-1, 
+    #item-3:checked ~ .cards #product-2 {
+      transform: translatex(-40%) scale(.8);
+      opacity: .4;
+      z-index: 0;
+    }
+    #item-1:checked ~ .cards #product-2, 
+    #item-2:checked ~ .cards #product-3, 
+    #item-3:checked ~ .cards #product-1 {
+      transform: translatex(40%) scale(.8);
+      opacity: .4;
+      z-index: 0;
+    }
+    
+    #item-1:checked ~ .cards #product-1, 
+    #item-2:checked ~ .cards #product-2, 
+    #item-3:checked ~ .cards #product-3 {
+      transform: translatex(0) scale(1);
+      opacity: 1;
+      z-index: 1;
+    }
+}  
+.btnP{
+    margin-left: 95px;
+        .btn{
+            background: none;
+            border: 2px solid;
+            font: inherit;
+            line-height: 1;
+            margin: 0.5em;
+            padding: 1em 2em;
+            margin-top: 250px;
+            color: white;
+            transition: 0.25s;
+            border-radius: 10px;
+
+            &:hover, &:focus{
+                animation: btn 1s;
+                box-shadow: 0 0 0 2em rgba($yellow, 0);
+                color: $yellow;
+            }
+
+            @keyframes btn {
+                0%{
+                    box-shadow: 0 0 0 -10px;
+                }
+            }
+    }
+}
+.container4{
+    background: $yellow;
+    height: 150px;
+    margin-top: 150px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    .social, .info, .contact{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+        
+    }
+}
+.copyR{
+    color:$yellow;
+    float:right;
+    margin-right: 15px;
+    font-size: 7px;
+}
+@media screen and (min-width: 350px){
+    .container3{
+        img{
+            margin-left: 130px;
+            width: 150px;
+            height: 250px;
+        }
+    }
+    .btnP{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+}
+@media screen and (min-width: 400px){
+    .container3{
+        img{
+            margin-left: 150px;
+            width: 150px;
+            height: 250px;
+        }
+    }
+    .btnP{
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+}
+@media screen and (min-width: 500px){
+    .container3{
+        img{
+            margin-left: 200px;
+            width: 150px;
+            height: 250px;
+        }
+        #item-1:checked ~ .cards #product-3, 
+        #item-2:checked ~ .cards #product-1, 
+        #item-3:checked ~ .cards #product-2 {
+          transform: translatex(-20%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+        #item-1:checked ~ .cards #product-2, 
+        #item-2:checked ~ .cards #product-3, 
+        #item-3:checked ~ .cards #product-1 {
+          transform: translatex(30%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+    }
+    .btnP{
+        margin-top: 50px;
+        margin-left: 210px;
+    }
+}
+@media screen and (min-width: 700px){
+    .container2{
+        margin: 0 20px 0 20px;
+        .img1{
+            display: none;
+        }
+        .text1{
+            font-size: 18px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cafecorporate.com.au/wp-content/uploads/2020/03/Coffee-machine-drip-iStock-537409510.jpg");
+            background-size: 100vw;
+            height: 25vw;
+            p{
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+    }
+
+    .container3{
+
+        img{
+            margin-left: 270px;
+            width: 250px;
+            height: 350px;
+        }
+
+        #item-1:checked ~ .cards #product-3, 
+        #item-2:checked ~ .cards #product-1, 
+        #item-3:checked ~ .cards #product-2 {
+          transform: translatex(-15%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+        #item-1:checked ~ .cards #product-2, 
+        #item-2:checked ~ .cards #product-3, 
+        #item-3:checked ~ .cards #product-1 {
+          transform: translatex(20%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+    }
+
+    .btnP{
+        margin-top: 130px;
+        margin-left: 330px;
+    }
+}
 @media  screen and (min-width: 800px)
 {
     .container{
@@ -181,5 +390,78 @@ body{
                 }
             }
         }
+    }
+
+    .container3{
+        img{
+            margin-left: 90px;
+        }
+    }
+
+    .btnP{
+        float: right;
+        margin-right: 50px;
+        margin-top: -100px;
+
+        .btn{
+            padding: 1em 6em;
+        }
+    }
+
+    .container4{
+        margin-top: 500px;
+    }
+}
+@media screen and (min-width: 900px){
+    .btnP{
+        margin-right: 100px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .btnP{
+        margin-right: 200px;
+    }
+}
+@media screen and (min-width: 1210px){
+    .container2{
+        padding: 30px;
+        margin-right: 100px;
+        margin-left: 100px;
+        .text1{
+            background-size: 90vw;
+            p{
+                margin-left: 600px;
+                margin-right: 60px;
+            }
+            h1{
+                margin-left: 550px;
+            }
+        }
+    }
+
+    .container3{
+        
+        img{
+            margin-left: 250px;
+        }
+
+        #item-1:checked ~ .cards #product-3, 
+        #item-2:checked ~ .cards #product-1, 
+        #item-3:checked ~ .cards #product-2 {
+          transform: translatex(-15%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+        #item-1:checked ~ .cards #product-2, 
+        #item-2:checked ~ .cards #product-3, 
+        #item-3:checked ~ .cards #product-1 {
+          transform: translatex(10%) scale(.8);
+          opacity: .4;
+          z-index: 0;
+        }
+    }
+
+    .btnP{
+        margin-right: 450px;
     }
 }
