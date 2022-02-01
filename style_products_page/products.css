@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap");
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search_input {
+  border: none;
+  border-bottom: 1px solid #dea450;
+  font-size: 18px;
+  background: inherit;
+  color: inherit;
+}
+
+.search_button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+  color: inherit;
+}
+
+.search_input:focus,
+.search_button:focus {
+  outline: none;
+}
+
+.container1 {
+  padding: 0 30px;
+}
+
+.container1 header nav .nav_toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.container1 header nav .nav_toggle i {
+  width: 2rem;
+  fill: black;
+}
+
+.container1 header nav .nav_toggle .close {
+  display: none;
+}
+
+.container1 header nav .nav_toggle .menu {
+  margin-top: 0.2rem;
+}
+
+.container1 header nav .nav_checkbox {
+  display: none;
+}
+
+.container1 header nav ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container1 header nav ul li {
+  font-weight: 400;
+  cursor: pointer;
+  display: none;
+}
+
+.container1 header nav ul li img {
+  width: 5rem;
+}
+
+.container1 header nav ul li:first-child {
+  margin-right: auto;
+  display: block;
+}
+
+.container1 header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container1 header nav ul li a:hover {
+  border-bottom: 1px solid #dea450;
+  padding: 5px 0 5px 0;
+}
+
+.container1 header nav ul li .search_input {
+  font-size: 14px;
+}
+
+.container1 header nav #nav_checkbox:checked ~ ul li {
+  display: block;
+}
+
+.container1 header nav #nav_checkbox:checked ~ .nav_toggle .close {
+  display: block;
+}
+
+.container1 header nav #nav_checkbox:checked ~ .nav_toggle .menu {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .container1 header nav .nav_toggle {
+    display: none;
+  }
+  .container1 header nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container1 header nav ul li {
+    display: block;
+  }
+  .container1 header nav ul li img {
+    width: 7rem;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  background: black;
+  color: #dea450;
+}
+/*# sourceMappingURL=products.css.map */
