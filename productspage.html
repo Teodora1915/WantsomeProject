@@ -21,8 +21,8 @@
                 <li>
                 <img src="images/logoY.png" alt="Logo" />
             </li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="productspage.html">Products</a></li>
                 <li><a href="#">Recipes</a></li>
                 <li><a href="#">Cart</a></li>
                 <li><a href="signin.html">Login/Register</a></li>
@@ -36,5 +36,130 @@
             </nav>
         </header>
     </section>
+
+    <section id="filter-btn1">
+      <h3>Filter by roasts</h3>
+      <button class="btn1 active" onclick="filterSelection('all')">All</button>
+      <button class="btn1" onclick="filterSelection('light')">Light</button>
+      <button class="btn1" onclick="filterSelection('medium')">Medium</button>
+      <button class="btn1" onclick="filterSelection('dark')">Dark</button>
+    </section>
+    <!-- <section id="filter-btn2">
+      <h3>Filter by type</h3>
+      <button class="btn2 active" onclick="filterSelection('all')">All</button>
+      <button class="btn2" onclick="filterSelection('whole-bean')">Whole Bean</button>
+      <button class="btn2" onclick="filterSelection('ground')">Ground</button>
+    </section> -->
+    <section class="container">
+      <div class="filterDiv light ground">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/86b484fbb380fd45f0c9e572836f7c8f7f87a906-800x1000.png?w=768&h=960&fit=crop" alt="hola"/>
+        <div class="filterDiv text">
+          <h2>HOLA</h2>
+          <p>WILD/AWAKE/SPIRITED</p>
+          <p>$11.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/dbd160e93cddee171a8c06da6e6652710b8c04ba-800x1000.png?w=768&h=960&fit=crop" alt="cliff hanger espresso" />
+        <div class="text">
+          <h2>CLIFF.HANGER</h2> 
+          <h2>ESPRESSO</h2>
+          <p>BRIGHT/FRUIT&COCOA/HEAVENLY</p>
+          <p>$29.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/a253780d034b3b7ebe1256f540c9170d3f5b8507-800x1000.png?w=768&h=960&fit=crop" alt="limited edition: two five" />
+        <div class="text">
+          <h2>LIMITED.EDITION:</h2> 
+          <h2>TWO.FIVE</h2>
+          <p>BRIGHT/NOSTALGIC/WILD</p>
+          <p>$14.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/89e40ada4d0a5089c4129d53d9ef6dd1be522097-800x1000.png?w=768&h=960&fit=crop" alt="smart ass" />
+        <div class="text">
+          <h2>SMART.ASS</h2>
+          <p>CHEEKY/BRIGHT/PRECOCIOUS</p>
+          <p>$11.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium ground">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/e13d2eddae24543abd88e4a41a44067753af814c-800x1000.png?w=768&h=960&fit=crop" alt="smart ass" />
+        <div class="text">
+          <h2>SMART.ASS</h2>
+          <p>CHEEKY/BRIGHT/PRECOCIOUS</p>
+          <p>$14.99</p>
+          </div>
+      </div>
+      <div class="filterDiv medium whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/69996c4df0972d2d3eae77e0ac95d6888c5bd9c4-800x1000.png?w=768&h=960&fit=crop" alt="lucky jim" />
+        <div class="text">
+          <h2>LUCKY.JIM</h2>
+          <p>GOOD/SWIFT/KICK</p>
+          <p>$13.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium ground">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/b94141dfa76720659bd58c996789988a8bc3ef07-800x1000.png?w=768&h=960&fit=crop" alt="lucky jim" />
+        <div class="text">
+          <h2>LUCKY.JIM</h2>
+          <p>GOOD/SWIFT/KICK</p>
+          <p>$11.99</p>
+        </div>
+      </div>
+      <div class="filterDiv medium whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/84cd51f857f49724774afaf70fb7b13af5f3a08f-800x1000.png?w=768&h=960&fit=crop" alt="three sisters" />
+        <div class="text">
+          <h2>THREE.SISTERS</h2>
+          <p>SMOOTH/SAVOURY/SEDUCTIVE</p>
+          <p>$11.99</p>
+        </div>
+      </div>
+
+      <div class="filterDiv dark whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/acd0d48f3f6a2f1b6e74cc108d0d9ecb40f9494b-800x1000.png?w=768&h=960&fit=crop" alt="decaf" />
+        <div class="text">
+          <h2>DECAF</h2>
+          <p>SWISS.WATER.PROCESS</p>
+          <p>$12.99</p>
+        </div>
+      </div>
+      <div class="filterDiv dark whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/f90d022f9d16a8bd4f9bd417bc8e6dc85447eae9-800x1000.png?w=768&h=960&fit=crop" alt="kick ass" />
+        <div class="text">
+          <h2>KICK.ASS</h2>
+          <p>SWEET/SMOKY/AUDACIOUS</p>
+          <p>$11.99</p>
+        </div>
+      </div>
+      <div class="filterDiv dark ground">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/3280f90624b46f2f3d08993f0f8b273c77f8b946-800x1000.png?w=768&h=960&fit=crop" alt="kick ass" />
+        <div class="text">
+          <h2>KICK.ASS</h2>
+          <p>SWEET/SMOKY/AUDACIOUS</p>
+          <p>$10.99</p>
+        </div>
+      </div>
+      <div class="filterDiv dark ground">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/9b289c32f244e60c8705bc97a50c30a4c64d1b10-800x1000.png?w=768&h=960&fit=crop" alt="grizzly claw" />
+        <div class="text">
+          <h2>GRIZZLY.CLAW</h2>
+          <p>RICH/DARK.CHOCOLATE/DECADENT</p>
+          <p>$19.99</p>
+        </div>
+      </div>
+      <div class="filterDiv dark whole-bean">
+        <img class="imgP" src="https://cdn.sanity.io/images/0cvyr85o/us/0a378a51943fcd0c72f73536003a86fb56dbc026-800x1000.png?w=768&h=960&fit=crop" alt="454 horse power" />
+        <div class="text">
+          <h2>454.HORSE.POWER</h2>
+          <p>VELVETY/EARTHY/SPIRITED</p>
+          <p>$17.99</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="style_products_page/productspage.js"></script>
   </body>
   </html>

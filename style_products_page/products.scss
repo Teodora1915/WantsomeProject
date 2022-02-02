@@ -17,3 +17,125 @@ body{
     background: black ;
     color: $yellow;
 }
+.container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+.filterDiv{
+    float: left;
+  background-color: none;
+  color:$yellow;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: .5px;
+  display: none;
+
+  .text
+  {
+    //   display: none;
+    line-height: 8px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 25px;
+    p{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+  }
+
+    .imgP{
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        transition: all .2s ease-in-out;
+        margin-left: 60px;
+
+        &:hover{
+            background-color: $yellow;
+            transform: scale(1.1);
+
+        }
+    }
+}
+
+
+.show{
+    display: block;
+}
+
+
+#filter-btn1{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+
+.btn1{
+    border: none;
+    outline: none;
+    padding: 3px 16px;
+    border-radius: 5px;
+    color: $yellow;
+    background-color: $black;
+    cursor: pointer;
+
+    &:hover {
+        background-color: brown;
+    }
+
+}
+
+.btn1.active{
+    background-color: $yellow;
+    color: $black;
+}
+
+@media screen and (min-width: 600px){
+
+    .container{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 953px){
+    .container{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .filterDiv{
+        .imgP{
+            width: 200px;
+            height: 250px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .filterDiv{
+        .imgP{
+            width: 200px;
+            height: 250px;
+        }
+    }
+}
+
+
+
