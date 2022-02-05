@@ -121,6 +121,10 @@
   display: none;
 }
 
+.container1 .slogan {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   .container1 header nav .nav_toggle {
     display: none;
@@ -136,6 +140,25 @@
   }
   .container1 header nav ul li img {
     width: 7rem;
+  }
+  .container1 .slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .container1 .slogan .part1, .container1 .slogan .part2 {
+    font-size: 30px;
+    font-style: italic;
+  }
+  .container1 .slogan .part2 {
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+  .container1 .slogan .part1 {
+    margin-right: 0px;
   }
 }
 
