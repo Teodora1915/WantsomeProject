@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap');
+@import 'colors';
+@import 'search';
+@import 'navBar';
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    background: black ;
+    color: $yellow;
+}

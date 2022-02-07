@@ -1,0 +1,27 @@
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search_input{
+    border: none;
+    border-bottom: 1px solid $yellow;
+    font-size: 18px;
+    background: inherit;
+    color: inherit;
+}
+
+.search_button{
+    border: none;
+    background-color:inherit;
+    cursor:pointer;
+    font-size: 18px;
+    color: inherit;
+}
+
+.search_input:focus,
+.search_button:focus{
+    outline: none;
+}

@@ -238,6 +238,7 @@ body {
   background-color: #dea450;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border-radius: 30%;
 }
 
 .show {
