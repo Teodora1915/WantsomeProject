@@ -188,6 +188,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 15px;
 }
 
 .filterDiv {
